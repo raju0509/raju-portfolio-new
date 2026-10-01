@@ -1,0 +1,860 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 78px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 55px 6vw 70px;
+
+  background:
+    radial-gradient(
+      circle at 78% 42%,
+      rgba(0, 190, 255, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(45, 100, 255, 0.10),
+      transparent 28%
+    );
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.hero-glow-one {
+  width: 300px;
+  height: 300px;
+
+  right: 8%;
+  top: 25%;
+
+  background: rgba(0, 183, 255, 0.08);
+}
+
+.hero-glow-two {
+  width: 250px;
+  height: 250px;
+
+  left: 5%;
+  bottom: 5%;
+
+  background: rgba(45, 100, 255, 0.07);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(420px, 0.95fr);
+
+  align-items: center;
+
+  gap: 45px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.hero-content {
+  max-width: 700px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 24px;
+
+  color: #48ddf7;
+
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.terminal-icon {
+  color: #20d5f7;
+}
+
+.eyebrow-dot {
+  color: #52718f;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  color: #f4f8ff;
+
+  font-size: clamp(58px, 6vw, 86px);
+
+  line-height: 0.94;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+}
+
+.hero-title > span {
+  display: block;
+}
+
+
+/* Gradient Text */
+
+.hero-highlight {
+  background: linear-gradient(
+    100deg,
+    #5796ff 0%,
+    #22d3ee 55%,
+    #38ddff 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 620px;
+
+  margin: 30px 0 32px;
+
+  color: #9db1ca;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+
+.hero-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  padding: 0 23px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* Primary Button */
+
+.hero-btn-primary {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #287cff,
+    #11bfe8
+  );
+
+  box-shadow:
+    0 12px 35px rgba(25, 150, 255, 0.22);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 40px rgba(25, 150, 255, 0.32);
+}
+
+
+/* Secondary Button */
+
+.hero-btn-secondary {
+  color: #d9e7f7;
+
+  border: 1px solid #21466d;
+
+  background: rgba(7, 25, 48, 0.55);
+}
+
+.hero-btn-secondary:hover {
+  color: #ffffff;
+
+  border-color: #2ed8f5;
+
+  transform: translateY(-2px);
+}
+
+
+/* Button Icons */
+
+.btn-icon {
+  margin-right: 9px;
+
+  font-size: 18px;
+}
+
+.btn-arrow {
+  margin-left: 9px;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY TAGS
+========================================================= */
+
+.hero-tech {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+.hero-tech span {
+  padding: 7px 13px;
+
+  border: 1px solid rgba(65, 130, 180, 0.25);
+
+  border-radius: 20px;
+
+  color: #7895b3;
+
+  background: rgba(7, 25, 48, 0.35);
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 470px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  /* Move profile upward */
+  transform: translateY(-65px);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE WRAPPER
+========================================================= */
+
+.hero-image-wrapper {
+  position: relative;
+
+  width: 350px;
+  height: 350px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   OUTER PROFILE RING
+========================================================= */
+
+.hero-image-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -9px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #18d9ff,
+    #267dff 55%,
+    #0d315c
+  );
+
+  box-shadow:
+    0 0 35px rgba(19, 190, 255, 0.18);
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   INNER PROFILE BORDER
+========================================================= */
+
+.hero-image-wrapper::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -3px;
+
+  border-radius: 50%;
+
+  background: #061a32;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   IMAGE GLOW
+========================================================= */
+
+.hero-image-glow {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(20, 183, 255, 0.18),
+      transparent 65%
+    );
+
+  filter: blur(25px);
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.hero-image {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  border-radius: 50%;
+
+  border: 5px solid #071a30;
+}
+
+
+/* =========================================================
+   ORBIT RINGS
+========================================================= */
+
+.orbit {
+  position: absolute;
+
+  border: 1px solid rgba(28, 183, 237, 0.18);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.orbit-one {
+  width: 440px;
+  height: 440px;
+
+  transform: rotate(-20deg);
+}
+
+.orbit-two {
+  width: 500px;
+  height: 360px;
+
+  transform: rotate(35deg);
+}
+
+.orbit-three {
+  width: 530px;
+  height: 300px;
+
+  transform: rotate(-35deg);
+}
+
+
+/* =========================================================
+   CLOUD & DEVOPS STATUS
+========================================================= */
+
+.hero-status {
+  position: absolute;
+
+  top: 72px;
+  right: 35px;
+
+  z-index: 6;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 14px;
+
+  border: 1px solid rgba(43, 158, 214, 0.28);
+
+  border-radius: 20px;
+
+  color: #88a5c1;
+
+  background: rgba(5, 27, 51, 0.72);
+
+  backdrop-filter: blur(12px);
+
+  font-size: 11px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #22d9ef;
+
+  box-shadow:
+    0 0 8px rgba(34, 217, 239, 0.8);
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.hero-card {
+  position: absolute;
+
+  z-index: 6;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 17px;
+
+  border: 1px solid rgba(61, 157, 220, 0.32);
+
+  border-radius: 14px;
+
+  background: rgba(7, 27, 51, 0.90);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* AWS Card */
+
+.hero-card-top {
+  top: 105px;
+  left: 0;
+}
+
+
+/* Cost Card */
+
+.hero-card-bottom {
+  right: 0;
+  bottom: 55px;
+}
+
+
+/* Card Icon */
+
+.hero-card-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #28d8f5;
+
+  background: rgba(15, 106, 145, 0.18);
+
+  font-family: monospace;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* Card Content */
+
+.hero-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.hero-card-content strong {
+  color: #eaf4ff;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero-card-content small {
+  color: #718ba8;
+
+  font-size: 10px;
+}
+
+
+/* Cost Number */
+
+.hero-card-number {
+  color: #22e0b3;
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .hero-container {
+    grid-template-columns: 1fr 0.9fr;
+
+    gap: 25px;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 6vw, 72px);
+  }
+
+  .hero-image-wrapper {
+    width: 320px;
+    height: 320px;
+  }
+
+  .orbit-one {
+    width: 400px;
+    height: 400px;
+  }
+
+  .orbit-two {
+    width: 450px;
+    height: 330px;
+  }
+
+  .orbit-three {
+    width: 470px;
+    height: 280px;
+  }
+
+  .hero-card-top {
+    left: -10px;
+  }
+
+  .hero-card-bottom {
+    right: -10px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: auto;
+
+    padding:
+      70px
+      24px
+      80px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .hero-content {
+    max-width: 720px;
+
+    margin: 0 auto;
+  }
+
+  .hero-eyebrow {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-tech {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+
+    transform: none;
+
+    margin-top: 10px;
+  }
+
+  .hero-card-top {
+    left: 5%;
+    top: 75px;
+  }
+
+  .hero-card-bottom {
+    right: 5%;
+    bottom: 45px;
+  }
+
+  .hero-status {
+    right: 8%;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding:
+      50px
+      20px
+      60px;
+  }
+
+  .hero-title {
+    font-size: 50px;
+
+    line-height: 0.96;
+  }
+
+  .hero-description {
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .hero-tech {
+    gap: 7px;
+  }
+
+  .hero-tech span {
+    padding: 6px 10px;
+
+    font-size: 10px;
+  }
+
+  .hero-visual {
+    min-height: 350px;
+  }
+
+  .hero-image-wrapper {
+    width: 270px;
+    height: 270px;
+  }
+
+  .orbit-one {
+    width: 320px;
+    height: 320px;
+  }
+
+  .orbit-two {
+    width: 350px;
+    height: 270px;
+  }
+
+  .orbit-three {
+    width: 370px;
+    height: 230px;
+  }
+
+  .hero-card {
+    padding: 9px 11px;
+  }
+
+  .hero-card-top {
+    top: 25px;
+    left: 0;
+  }
+
+  .hero-card-bottom {
+    right: 0;
+    bottom: 25px;
+  }
+
+  .hero-card-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-card-content strong {
+    font-size: 11px;
+  }
+
+  .hero-card-content small {
+    font-size: 9px;
+  }
+
+  .hero-card-number {
+    font-size: 17px;
+  }
+
+  .hero-status {
+    top: 5px;
+    right: 0;
+
+    padding: 7px 10px;
+
+    font-size: 9px;
+  }
+}
